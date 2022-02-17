@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>권일환포트폴리오</title>
-    <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/main.css" rel="stylesheet" />
+    <title>권일환 포트폴리오</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fancy => cdnjs 에서 가장 밑의 코드를 복붙한다.-->
+    <link href="css/main.css" rel="stylesheet" /> <!-- 이걸 넣어줌으로 새로운 창에서 스타일이 가능해진다. CSS 생성-->
 </head>
 <body>
     <header>
         <div>
             <h1>
-                <a href="#">
-                    <img src="images/logo.png" alt="00로고" /><!-- 로고 이미지 적용 / 이미지를 적용하지 않을 경우 텍스트로 변경  -->
-                </a>
+                <a href="#">IL-HWAN KWON</a>
             </h1>
-            <ul>
-                <li><a href="document/resume.pdf" download>resume</a></li> 
-                <!-- 위과 같이 download 를 붙여주면 바로 다운로드가 가능하다. -->
-            </ul>
+            <p><a href="document/resume.pdf" download>RESUME</a></p>
+            <!-- # 자리에 폴더/파일명 으로 자소서 한글 파일 연결해놓고 뒤에 'download' 입력해주면 클릭했을 때 파일다운로드가 된다. -->
         </div>
     </header>
-
-    <!-- 메인비주얼 영역 -->
     <div class="main_visual">
-        
-        <div class="mv_t">
-            <h1>motion graphic designer</h1>
-            <p>kwon il hwan</p>
-        </div><!-- .mv_t end -->
-    </div><!-- .main_visual end --> 
+        <div>
+            <video muted autoplay loop>
+                <source src="images/a24.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p><!-- video editing / motion graphic portfolio --></p>
+    </div> <!-- .main_visual end -->
 
-    <!-- 이력 작성 영역 -->
+
+
     <section class="profile">
         <div class="photo">
-            <figure><img src="images/img02.jpg" alt="oo얼굴" /></figure> 
+            <figure><img src="images/willy.png" alt="프로필사진"/></figure> 
         </div>
         <div class="about">
             <div>
                 <dl>
                     <dt>권일환</dt>
-                    <dd>010-2412-3525</dd>
-                    <dd>02.07.12</dd>
+                    <dd>2002년 07월 12일</dd>
                 </dl>
                 <dl>
                     <dt>EDUCATION</dt>
@@ -68,509 +68,672 @@
     </section><!-- profile end -->
 
 
-    <!-- 베스트 미디어 적용 -->
-    <section class="video v1">
-        <h3>BEST MEDIA</h3>
-        <div class="video_box">
+
+    <section class="motion">
+        <h3>Portfolio<!-- 모션그래픽디자인 --></h3>
+
+        <div class="motion_in">
+            <ul>
+                <li class="tit">제 2차 세계대전, 한 영웅의 이야기.</li>
+                <li class="att">연출, 촬영, 편집, 디자인, 특수효과 / 모방.</li>
+            </ul>
             <div class="info">
-                <p class="cate">#게임</p>
-                <h4>바버, 오늘과 과거를 잇다.</h4>
-                <p class="produce">연출, 촬영, 편집, 디자인, 특수효과 / 모방</p>
-                <p class="text">
-                    제작목적 및 콘셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet nostrum dolore quae iste neque suscipit voluptatum nam
-                </p>
+                <video controls loop muted> <!-- autoplay -->
+                    <source src="images/ip_man.mp4" type="video/mp4"/>
+                </video>
+                <div class="text">
+                    <strong>#영화티저</strong>
+                    <h4>엽문 1</h4>
+                    <p>제작목적 및 콘셉트 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequatur neque unde dignissimos nemo eos perferendis, magni molestiae molestias inventore expedita, quasi nobis, ipsa omnis veritatis officia. Dicta, repudiandae optio?</p>
+                    <dl>
+                        <dt>프로그램</dt>
+                        <dd>After Effect, Premiere pro, Illustrator</dd>
+                    </dl>
+                    <dl>
+                        <dt>러닝타임</dt>
+                        <dd>32s</dd>
+                    </dl>
+                    <dl>
+                        <dt>URL주소</dt>
+                        <dd>https://www.youtube.com/watch?v=edhu7lLZ6BI</dd>
+                    </dl>
+                    <ul class="btn">
+                        <li><a href="https://www.youtube.com/watch?v=edhu7lLZ6BI" target="_blank">유튜브보기</a></li>
+                        <li><a href="images/엽문/특수영상합성_기획서.pdf" download>기획서보기</a></li>
+                    </ul>
+                </div> <!-- .text end -->
+            </div> <!-- .info end -->
 
-                <dl>
-                    <dt>프로그램</dt>
-                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                </dl>
-                <dl>
-                    <dt>배경음악 </dt>
-                    <dd>사월 - 새로운 마음</dd>
-                </dl>
-                <dl>
-                    <dt>러닝타임</dt>
-                    <dd>3m 34s</dd>
-                </dl>
-                
-                <ul class="btn">
-                    <li><a href="#">영상보기</a></li>
-                    <li><a href="#">기획서보기</a></li>
+            <div class="thum">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="images/엽문/capture/1.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#01 00:03:12</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/엽문/capture/2.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#02 00:14:24</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/엽문/capture/3.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#03 00:22:00</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/엽문/capture/4.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#04 00:28:02</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/엽문/capture/5.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#05 00:31:11</p>
+                    </li>
                 </ul>
-            </div><!-- .info end -->
-            <div class="images">
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure>
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-            </div><!-- .images end -->
-            <div class="video_tag">
-                <!-- mp4 적용할 경우 -->
-                <!-- <video controls>
-                    <source src="images/tree.mp4" type="video/mp4">
-                </video> -->
+            </div> <!-- .thum end -->
+        </div> <!-- .motion_in end 1 -->
 
-                <!-- 유튜브 연결할 경우 -->
-                <div class="youtube"> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aNIjOiwX5yw?&amp;playlist=aNIjOiwX5yw&amp;loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
 
-            </div>
-        </div><!-- .video_box end --> 
-    </section><!-- .video end / 01 -->
 
-    <section class="video v2"> 
-        <div class="video_box">
-            <div class="images">
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure>
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-                <figure>
-                    <img src="https://via.placeholder.com/250x250" alt="" />
-                </figure> 
-            </div><!-- .images end -->
-
+        <div class="motion_in">
+            <ul>
+                <li class="tit">프리미어 리그 전통 강호들의 대결.</li>
+                <li class="att">연출, 촬영, 편집, 디자인, 특수효과 / 모방.</li>
+            </ul>
             <div class="info">
-                <p class="cate">#홍보영상</p>
-                <h4>바버, 오늘과 과거를 잇다.</h4>
-                <p class="produce">연출, 촬영, 편집, 디자인, 특수효과 / 모방</p>
-                <p class="text">
-                    제작목적 및 콘셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet nostrum dolore quae iste neque suscipit voluptatum nam
-                </p>
+                <div class="text">
+                    <div class="second">
+                        <strong>#홍보영상</strong>
+                        <h4>Tottenham VS Liverpool</h4>
+                        <p>제작목적 및 콘셉트 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequatur neque unde dignissimos nemo eos perferendis, magni molestiae molestias inventore expedita, quasi nobis, ipsa omnis veritatis officia. Dicta, repudiandae optio?</p>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>After Effect, Illustrator</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>14s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd>https://www.youtube.com/watch?v=ae8JCs2tRmg</dd>
+                        </dl>
+                        <ul class="btn">
+                            <li><a href="https://www.youtube.com/watch?v=ae8JCs2tRmg" target="_blank">유튜브보기</a></li>
+                            <li><a href="images/토트넘 vs 리버풀/방송CG작업_기획안.pdf">기획서보기</a></li>
+                        </ul>
+                    </div> <!-- .second end -->
+                </div> <!-- .text end -->
+                <video controls loop muted>
+                    <source src="images/tot.mp4" type="video/mp4"/>
+                </video>
+            </div> <!-- .info end -->
 
-                <dl>
-                    <dt>프로그램</dt>
-                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                </dl>
-                <dl>
-                    <dt>배경음악 </dt>
-                    <dd>사월 - 새로운 마음</dd>
-                </dl>
-                <dl>
-                    <dt>러닝타임</dt>
-                    <dd>3m 34s</dd>
-                </dl>
-                
-                <ul class="btn">
-                    <li><a href="#">영상보기</a></li>
-                    <li><a href="#">기획서보기</a></li>
+        
+            <div class="thum">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="images/토트넘 vs 리버풀/capture/1.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#01 00:00:13</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/토트넘 vs 리버풀/capture/2.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#02 00:03:06</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/토트넘 vs 리버풀/capture/3.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#03 00:05:02</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/토트넘 vs 리버풀/capture/4.PNG" alt="안개꽃"/>
+                        </figure>
+                        <p>#04 00:08:22</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/토트넘 vs 리버풀/capture/5.PNG" alt="안개꽃"/>
+                        <p>#05 00:12:21</p>
+                    </li>
                 </ul>
-            </div><!-- .info end -->
-            
-            <div class="video_tag">
-                <!-- <video controls>
-                    <source src="images/tree.mp4" type="video/mp4">
-                </video> -->
-                <div class="youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ae8JCs2tRmg?&amp;playlist=ae8JCs2tRmg&amp;loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                    <!-- 위의 유튜브주소 옆에 ?&amp;playlist=ae8JCs2tRmg&amp;loop=1&autoplay=1&mute=1 
-                    이걸 넣어주면 ae8JCs2tRmg(유튜브주소 마지막 부분)을 반복재생&음소거 해주겠다는 의미가 된다. -->
-                </div> <!-- .youtube end -->
-            </div>
-        </div><!-- .video_box end -->
+            </div> <!-- .thum end -->
+        </div> <!-- .motion_in end 2 -->
+    </section> <!-- .motion end -->
 
-    </section><!-- .video end / 02 -->
- 
 
-    <!-- 카테고리별 유튜브 적용 -->
-    <!-- 카테고리 갯수만큼 -->
+    <section class="motion_slide"> <!-- swiper demo 의 애니메이션을 찾아서 위 메뉴의 core 로 들어가면 코딩언어들이 나온다. -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <figure class="f1"></figure>
+                <div class="list"> <!-- 비디오와 정보 -->
+                    <video autoplay loop muted>
+                        <source src="images/frozen.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="info">
+                        <strong>#영화티저</strong>
+                        <h4>겨울왕국 2</h4>
+                        <p>제작목적과 콘셉트 : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptate at suscipit itaque 
+                        </p>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>After Effect, Premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>31s</dd>
+                        </dl>
+                        <ul class="btn">
+                            <li><a href="https://www.youtube.com/watch?v=JwRQAkruFfc" target="_blank">유튜브보기</a></li>
+                            <li><a href="images/Frozen/Path_kih.pdf" download>기획서보기</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- .list end -->
+            </div> <!-- 1 -->
+
+            <div class="swiper-slide">
+                <figure class="f2"></figure>
+                <div class="list"> <!-- 비디오와 정보 -->
+                    <video autoplay loop muted>
+                        <source src="images/butter.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="info">
+                        <strong>#MV티저</strong>
+                        <h4>BTS - Butter 멀티캠 편집</h4>
+                        <p>제작목적과 콘셉트 : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptate at suscipit itaque 
+                        </p>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>10m 45s</dd>
+                        </dl>
+                        <ul class="btn">
+                            <li><a href="https://www.youtube.com/watch?v=8ZI5b1h3Iy4" target="_blank">유튜브보기</a></li>
+                            <li><a href="images/BTS_butter/">기획서보기</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- .list end -->
+            </div> <!-- 2 -->
+
+            <div class="swiper-slide">
+                <figure class="f3"></figure>
+                <div class="list"> <!-- 비디오와 정보 -->
+                    <video autoplay loop muted>
+                        <source src="images/my_universe.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="info">
+                        <strong>#MV티저</strong>
+                        <h4>Coldplay - My Universe</h4>
+                        <p>제작목적과 콘셉트 : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptate at suscipit itaque 
+                        </p>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>45s</dd>
+                        </dl>
+                        <ul class="btn">
+                            <li><a href="https://www.youtube.com/watch?v=w-LNpxjqp8c" target="_blank">유튜브보기</a></li>
+                            <li><a href="images/My universe/제작편집_기획안.pdf" download>기획서보기</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- .list end -->
+            </div> <!-- 3 -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+    </section> <!-- .motion_slide end -->
+
+
+
+    <!-- 유튜브 리스트 -->
     <section class="youtube_list">
-        <h3>MOTION GRAPHICS</h3>
-        <!-- 카테고리 메뉴 -->
+        <h3>영상리스트</h3>
         <div class="motion_cate">
             <ul>
-                <li class="on"><a href="#">게임</a></li>
+                <li class="on"><a href="#">영화티저</a></li>
+                <li><a href="#">뮤비티저</a></li>
                 <li><a href="#">홍보영상</a></li>
                 <li><a href="#">인포그래픽</a></li>
-                <li><a href="#">뮤비 티저</a></li>
-                <li><a href="#">영화 티저</a></li>
-            </ul>
-        </div>
-        <div class="youtube_wrap"><!-- content -->
-            <div class="motion_content">
-                <div class="swiper mySwiperBeween">
-                    <div class="swiper-wrapper motion_list on">
-                        <!-- swiper-slide => 컨텐츠 추가삭제 -->
-                        <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DkXvif19ffg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                                </dl>
-                                <dl>
-                                    <dt>러닝타임</dt>
-                                    <dd>15s</dd>
-                                </dl>
-                                <dl>
-                                    <dt>URL주소</dt>
-                                    <dd><a href="#">https://www.youtube.com/</a></dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pr__GAkZNEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                                </dl>
-                                <dl>
-                                    <dt>러닝타임</dt>
-                                    <dd>15s</dd>
-                                </dl>
-                                <dl>
-                                    <dt>URL주소</dt>
-                                    <dd><a rhef="#">https://www.youtube.com/</a></dd>
-                                </dl>
-                            </div>
-                        </div><!-- swiper-slide end --> 
-                    </div>
+            </ul> 
+        </div> <!-- .motion_cate end -->
+        <div class="youtube_wrap">
+            <div class="youtube_cont">
 
-                </div><!-- .motion_list 1 -->
-                <div class="swiper mySwiperBeween">
-                    <div class="swiper-wrapper motion_list">
-                        <div class="swiper-slide">
-                            <figure>
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ae8JCs2tRmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                                </dl>
-                                <dl>
-                                    <dt>러닝타임</dt>
-                                    <dd>15s</dd>
-                                </dl>
-                                <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aNIjOiwX5yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                                </dl>
-                                <dl>
-                                    <dt>러닝타임</dt>
-                                    <dd>15s</dd>
-                                </dl>
-                                <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/13jhFFYCWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
-                                </dl>
-                                <dl>
-                                    <dt>러닝타임</dt>
-                                    <dd>15s</dd>
-                                </dl>
-                                <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- motion_list 2 -->
+                <!-- Swiper -->
+                <div class="swiper mySwiperyoutube">
+                    <div class="swiper-wrapper on">
 
-                <div class="swiper mySwiperBeween">
-                    <div class="swiper-wrapper motion_list">
                         <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/13jhFFYCWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/JwRQAkruFfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>Frozen 2</h4>
                                 <dl>
                                     <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
+                                    <dd>일러스트, 프리미어프로, 에프터 이펙트</dd>
                                 </dl>
                                 <dl>
                                     <dt>러닝타임</dt>
                                     <dd>15s</dd>
                                 </dl>
                                 <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
+                                    <dt>배경음악</dt>
+                                    <dd>From 'Frozen 2' BGM</dd>
                                 </dl>
-                            </div>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=JwRQAkruFfc" target="_blank">https://www.youtube.com/watch?v=JwRQAkruFfc</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
                         </div>
+
                         <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/13jhFFYCWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/edhu7lLZ6BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>엽문 1</h4>
                                 <dl>
                                     <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
+                                    <dd>일러스트, 애프터 이펙트</dd>
                                 </dl>
                                 <dl>
                                     <dt>러닝타임</dt>
-                                    <dd>15s</dd>
+                                    <dd>30s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>From 'Whiplesh - Caravan'</dd>
                                 </dl>
                                 <dl>
                                     <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
+                                    <dd><a href="https://www.youtube.com/watch?v=edhu7lLZ6BI" target="_blank">https://www.youtube.com/watch?v=edhu7lLZ6BI</a></dd>
                                 </dl>
-                            </div>
+                            </div> <!-- .info end -->
                         </div>
+
                     </div>
-                </div><!-- .motion_list 3 -->
-                
-                <div class="swiper mySwiperBeween">
-                    <div class="swiper-wrapper motion_list">
+                    <div class="swiper-pagination"></div>
+                </div> <!-- 1 -->
+
+                <div class="swiper mySwiperyoutube">
+                    <div class="swiper-wrapper">
+
                         <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/13jhFFYCWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/w-LNpxjqp8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>My Universe 티저영상</h4>
                                 <dl>
                                     <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
+                                    <dd>프리미어프로, 애프터 이펙트</dd>
+                                </dl>
+                                <dl>
+                                    <dt>러닝타임</dt>
+                                    <dd>1m 15s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>Coldplay - My Universe</dd>
+                                </dl>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=w-LNpxjqp8c" target="_blank">https://www.youtube.com/watch?v=w-LNpxjqp8c</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZI5b1h3Iy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>BTS - Butter</h4>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>프리미어프로, 애프터 이펙트</dd>
+                                </dl>
+                                <dl>
+                                    <dt>러닝타임</dt>
+                                    <dd>3m 45s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>BTS - Butter live</dd>
+                                </dl>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=8ZI5b1h3Iy4" target="_blank">https://www.youtube.com/watch?v=8ZI5b1h3Iy4</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hIwQCMOhwfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>Coldplay comeback teaser</h4>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>프리미어프로, 애프터 이펙트</dd>
+                                </dl>
+                                <dl>
+                                    <dt>러닝타임</dt>
+                                    <dd>45s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>Coldplay - San Paulo live</dd>
+                                </dl>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=hIwQCMOhwfU" target="_blank">https://www.youtube.com/watch?v=hIwQCMOhwfU</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div> <!-- 2 -->
+
+                <div class="swiper mySwiperyoutube">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ae8JCs2tRmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>Tottenham VS Liverpool</h4>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>일러스트, 프리미어프로, 애프터 이펙트</dd>
                                 </dl>
                                 <dl>
                                     <dt>러닝타임</dt>
                                     <dd>15s</dd>
                                 </dl>
                                 <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
+                                    <dt>배경음악</dt>
+                                    <dd>Coldplay - Every teardrop is a waterfall</dd>
                                 </dl>
-                            </div>
-                        </div> 
-                    </div>
-                </div><!-- .motion_list 4 -->
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=ae8JCs2tRmg" target="_blank">https://www.youtube.com/watch?v=ae8JCs2tRmg</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
 
-                <div class="swiper mySwiperBeween">
-                    <div class="swiper-wrapper motion_list">
                         <div class="swiper-slide">
-                            <figure>
-                                <!-- <img src="images/img01.jpg" alt="" /> -->
-                                <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/edhu7lLZ6BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </figure>
-                            <div>
-                                <p>작업내용(각본 연출 촬영 편집 보정)</p>
-                                <h4>밀레니아 메이킹 다큐멘터리 필름</h4>
-                                
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aNIjOiwX5yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>영화사 A24</h4>
                                 <dl>
                                     <dt>프로그램</dt>
-                                    <dd>Photoshop, Illustrator, Premiere Pro, After Effects</dd>
+                                    <dd>일러스트, 애프터 이펙트</dd>
+                                </dl>
+                                <dl>
+                                    <dt>러닝타임</dt>
+                                    <dd>20s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>From 'freesound'</dd>
+                                </dl>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="https://www.youtube.com/watch?v=aNIjOiwX5yw" target="_blank">https://www.youtube.com/watch?v=aNIjOiwX5yw</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div> <!-- 3 -->
+
+                <div class="swiper mySwiperyoutube">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kgx4WGK0oNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>jazz/lofi hip hop radio🌱chill beats to relax/study to [LIVE 24/7]</h4>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>포토샵, 일러스트, 프리미어프로, 애프터 이펙트</dd>
                                 </dl>
                                 <dl>
                                     <dt>러닝타임</dt>
                                     <dd>15s</dd>
                                 </dl>
                                 <dl>
-                                    <dt>URL주소</dt>
-                                    <dd>https://www.youtube.com/</dd>
+                                    <dt>배경음악</dt>
+                                    <dd>Coldplay - Every teardrop is a waterfall</dd>
                                 </dl>
-                            </div>
-                        </div> 
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="#" target="_blank">https://www.youtube.com/watch?v=kgx4WGK0oNU</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- 유튜브 & 정보 -->
+                            <div class="youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kgx4WGK0oNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> <!-- .youtube end -->
+                            <div class="info">
+                                <p>작업내용(각본 연출 촬영 편집 보정 특수효과)</p>
+                                <h4>jazz/lofi hip hop radio🌱chill beats to relax/study to [LIVE 24/7]</h4>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>포토샵, 일러스트, 프리미어프로, 애프터 이펙트</dd>
+                                </dl>
+                                <dl>
+                                    <dt>러닝타임</dt>
+                                    <dd>15s</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배경음악</dt>
+                                    <dd>Coldplay - Every teardrop is a waterfall</dd>
+                                </dl>
+                                <dl>
+                                    <dt>URL주소</dt>
+                                    <dd><a href="#" target="_blank">https://www.youtube.com/watch?v=kgx4WGK0oNU</a></dd>
+                                </dl>
+                            </div> <!-- .info end -->
+                        </div>
+
                     </div>
-                </div><!-- .motion_list 5 -->
+                    <div class="swiper-pagination"></div>
+                </div> <!-- 4 -->
 
-            </div><!-- .swiper -->
-        </div><!-- .youtube_wrap -->
-    </section><!-- .youtube list -->
+            </div> <!-- .youtube_cont end -->
+        </div> <!-- .youtube_wrap end -->
+    </section> <!-- .youtube_list end -->
 
-    <!-- 그래픽디자인 -->
+    <!-- 2D그래픽 작업 -->
     <section class="g_design">
-        <h3>2D VISUAL DESIGN</h3>
+        <h3>2D 디자인</h3>
         <em>클릭하시면 큰 이미지를 보실 수 있습니다.</em>
-            <div class="imglist"> 
-                <div>
-                    <a href="images/레퍼런스6.jpg" data-fancybox="images">
-                        <figure><img src="images/레퍼런스6.jpg" /></figure>
-                        <ul>
-                            <li>캐릭터디자인</li>    
-                            <li>Photoshop / oo영상 사용</li>    
-                        </ul>
-                    </a>
-                </div>
-                
-                <div>
-                    <a href="images/레퍼런스5.jpg" data-fancybox="images">
-                        <figure><img src="images/레퍼런스5.jpg" /></figure>
-                        <ul>
-                            <li>제품디자인</li>    
-                            <li>Photoshop / oo영상 사용</li>      
-                        </ul> 
-                    </a>
-                </div>
-            
-                <div>
-                    <a href="images/레퍼런스4.jpg" data-fancybox="images">
-                        <figure> <img src="images/레퍼런스4.jpg" /></figure>
-                        <ul>
-                            <li>제작목적</li>    
-                            <li>이름</li>    
-                        </ul>
-                    </a>
-                </div>
-            
-                <div>
-                    <a href="images/레퍼런스3.jpg" data-fancybox="images">
-                        <figure>  <img src="images/레퍼런스3.jpg" /></figure>
-                        <ul>
-                            <li>제작목적</li>    
-                            <li>이름</li>    
-                        </ul>
-                    </a> 
-                </div>
-            </div>
-       
-    </section><!-- .g_design end -->
+        <div class="img_list">
+
+            <div>
+                <a href="images/넷플릭스 캐릭터 & 사진합성/1.PNG" data-fancybox="images">
+                    <img src="images/넷플릭스 캐릭터 & 사진합성/2.PNG"/>
+                    <ul>
+                        <li>포토샵, 일러스트</li>
+                        <li>캐릭터 디자인</li>
+                    </ul>
+                </a> 
+            </div> <!-- 1 -->
+
+            <div>
+                <!-- fancybox3 로 들어간다. 이미지에 적용하는 것이니 좌측의 이미지 메뉴로 들어간다. -->
+                <a href="images/넷플릭스 캐릭터 & 사진합성/사진 합성/2D그래픽제작_시안2_권일환_수정.jpg" data-fancybox="images">
+                    <img src="images/넷플릭스 캐릭터 & 사진합성/사진 합성/2D그래픽제작_시안2_권일환_수정.jpg"/> 
+                    <!-- 앞의 경로는 큰 이미지, 뒤의 경로는 웹 상에서 나타나는 이미지. -->
+                    <!-- 이를 적용한 뒤 좌측의 setup으로 들어가서 cdnjs 사이트로 연결되는 곳을 클릭한다.-->
+                    <ul>
+                        <li>포토샵, 일러스트</li>
+                        <li>목업</li>
+                    </ul>
+                </a> 
+            </div> <!-- 2 -->
+
+            <div>
+                <!-- fancybox3 로 들어간다. 이미지에 적용하는 것이니 좌측의 이미지 메뉴로 들어간다. -->
+                <a href="images/넷플릭스 캐릭터 & 사진합성/사진 합성/2D그래픽제작_시안1_권일환_수정.jpg" data-fancybox="images">
+                    <img src="images/넷플릭스 캐릭터 & 사진합성/사진 합성/2D그래픽제작_시안1_권일환_수정.jpg"/> 
+                    <!-- 앞의 경로는 큰 이미지, 뒤의 경로는 웹 상에서 나타나는 이미지. -->
+                    <!-- 이를 적용한 뒤 좌측의 setup으로 들어가서 cdnjs 사이트로 연결되는 곳을 클릭한다.-->
+                    <ul>
+                        <li>포토샵</li>
+                        <li>목업</li>
+                    </ul>
+                </a> 
+            </div> <!-- 3 -->
+
+            <div>
+                <!-- fancybox3 로 들어간다. 이미지에 적용하는 것이니 좌측의 이미지 메뉴로 들어간다. -->
+                <a href="images/rice.jpg" data-fancybox="images">
+                    <img src="images/rice.jpg"/> 
+                    <!-- 앞의 경로는 큰 이미지, 뒤의 경로는 웹 상에서 나타나는 이미지. -->
+                    <!-- 이를 적용한 뒤 좌측의 setup으로 들어가서 cdnjs 사이트로 연결되는 곳을 클릭한다.-->
+                    <ul>
+                        <li>포토샵, 일러스트</li>
+                        <li>컴퓨터그래픽스운용기능사</li>
+                    </ul>
+                </a> 
+            </div> <!-- 4 -->
+
+        </div> <!-- .img_list end -->
+    </section> <!-- .g_design end -->
+
 
     <footer>
-        <h3>KwonIlHwan</h3>  
+        <h3>IL-HWAN KWON</h3>
         <ul>
-            <li><a href="https://www.youtube.com/channel/UCnK2SCYun1XEYAfr8OUnbkg">유튜브채널 바로가기</a></li>
-            <li><a href="tel:010-2412-3525">010 2412 3525</a></li> 
-            <li>whenibecomeamonster@naver.com </li>
+            <li>
+                <a href="tel:010-2412-3525">010-2412-3525</a>
+            </li> <!-- 위와 같이 언어를 넣어주면 바로 연락가능하도록 설정이 된다. -->
+            <li>
+                <a href="https://www.youtube.com/channel/UCnK2SCYun1XEYAfr8OUnbkg">유튜브계정 바로가기</a>
+            </li>
+            <li>
+                <a>justdowhatyoulove3525@gmail.com</a>
+            </li>
         </ul>
-        <p>COPYRIGHT 2022. HaSuJeong ALL RIGHTS RESERVED.<br />본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+        <div>
+            <p>COPYRIGHT 2022 권일환 .ALL RIGHTS RESERVED<br />
+            본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+        </div>
+        
     </footer>
 
-
-
-    <!-- 스크립트 작성 공간 -->
+    
+    <!-- jquery lib -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdnjs 사이트로 들어가서 jquery 검색한 다음 </> 이거 누르면 복사가 되기에 다시 돌아와서 이렇게 붙여넣기 하면 되시겠다.
+    jquery로 애니메이션을 실행하겠다, 라는 선언이다. 밑으로 효과가 적용된다. -->
+
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- fancybox3 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
+    <!-- cdnjs 에서 제일 위 -->
 
     <!-- Initialize Swiper -->
     <script>
-     
-        $(function(){
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-            $(window).resize(function(){
-                if($(window).width() < 767) {
-                    var swiper = new Swiper(".mySwiperBeween", {
-                    slidesPerView: 1.2,
-                    spaceBetween: 15,
-                        observer: true,
-                        observeParents: true,
+      $(function(){
+        //스크립트 코드
+          
+        //해상도 크기 767px 이하일 때부터 슬라이드 적용
+        $(window).resize(function(){
+            if($(window).width() < 767) {
+                //스와이퍼 스크립트 코드
+                var swiper = new Swiper(".mySwiperyoutube", {
+                    slidesPerView: 1.2, 
+                    /* 한번에 보여지는 페이지수 = 1.2개 */
+                    spaceBetween: 30,
+                    /* 페이지끼리의 간격 = 30px */
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
                 });
-                } //if
-            });//window
+            } //if
+        }); //resize
 
-        $('.motion_cate li').click(function(){
-            $('.motion_cate li') .removeClass('on');
+        //탭메뉴
+        $('.motion_cate ul li').click(function(){
+            $('.motion_cate ul li').removeClass('on');
             $(this).addClass('on');
+   
+            //메뉴를 클릭하면 컨텐츠 유/무를 결정
+            $('.mySwiperyoutube .swiper-wrapper').removeClass('on');
+            $('.mySwiperyoutube .swiper-wrapper').eq($(this).index()).addClass('on');
+        }); //탭메뉴
 
-            $('.motion_list').removeClass('on');
-            $('.motion_list').eq($(this).index()).addClass('on');
-            
-
-        });//motion_cate li click
-
+        /* a 태그 글자 클릭시 위로 올라가는 것 없애기 */
         $('.motion_cate li a').click(function(e){
             e.preventDefault();
-        }); //a태그 올라가는거 방지
+        });
 
-       
-       
-      });//jqeury end : 
-       
+      }); //jquery end
     </script>
-
-
-<!-- mp4 자동 플레이 작성 법 -->
-<!-- video태그안에 autuplay muted loop 작성 
-    <video autuplay muted loop>
----------------------------------------------------->
-
-    <!-- 유튜브 자동 플레이 작성 법 
-    자동재생, 음소거 ?autoplay=1&mute=1
-        반복재생 &amp;playlist=DkXvif19ffg&amp;loop=1
-        시작시간 추가시 자동재생, 음소거에서 ?대신에 &autoplay=1&mute=1
-
-        숫자 뒤에 &amp;playlist=DkXvif19ffg&amp;loop=1&autoplay=1&mute=1 작성 시 
-        자동재생 반복재생
-        DkXvif19ffg => 유튜브 주소임 유튜브에 따라서 변경
-    -->
 </body>
 </html>
